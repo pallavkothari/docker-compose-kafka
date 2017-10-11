@@ -17,7 +17,7 @@ docker-compose run --rm kafka kafka-topics.sh --list --zookeeper zookeeper:2181
 
 In a separate terminal, run a producer
 ```bash
-docker-compose run --rm --interactive kafka  kafka-console-producer.sh --topic test --broker-list kafka:9092
+docker-compose run --rm kafka  kafka-console-producer.sh --topic test --broker-list kafka:9092
 ```
 
 In a separate terminal, run a consumer:
